@@ -1,0 +1,69 @@
+{
+	"brackets": [
+		// HTML
+		{
+			"name": "html",
+			"open": "(<)(?=[\\w\\:\\-]+(?:(?:\\s+[\\w\\-:]+(?:\\s*=\\s*(?:\"[^\"]*\"|'[^']*'|[^>\\s]+))?)*)\\s*\\/?>|\\/[\\w\\:\\-]+[^>]*>)",
+			"close": "(?<=<)(?:[\\w\\:\\-]+(?:(?:\\s+[\\w\\-:]+(?:\\s*=\\s*(?:\"[^\"]*\"|'[^']*'|[^>\\s]+))?)*)\\s*\\/?|\\/[\\w\\:\\-]+[^>]*)(>)",
+			"style": "tag",
+			"scope_exclude": ["string", "comment"],
+			"language_filter": "whitelist",
+			"language_list": ["HTML", "HTML 5", "HBS", "XML", "PHP"],
+			"plugin_library": "bh_modules.tags",
+			"find_in_sub_search": "only",
+			"enabled": false
+		},
+		// Angle
+		{
+			"name": "angle",
+			"open": "(<)(?!\\?)",
+			"close": "(?<!\\?)(>)",
+			"style": "angle",
+			"scope_exclude": ["string", "comment", "keyword.operator", "source.ruby.rails.embedded.html", "source.ruby.embedded.html"],
+			"language_filter": "whitelist",
+			"language_list": ["HTML", "HTML 5", "HBS", "XML", "PHP", "HTML (Rails)", "HTML (Jinja Templates)", "HTML (Twig)", "HTML+CFML", "ColdFusion", "ColdFusionCFC"],
+			"plugin_library": "bh_modules.tags",
+			"enabled": true
+		},
+		// Ruby embedded HTML
+		{
+			"name": "ruby_embedded_html",
+			"open": "((?:(?<=<%)|(?<=^))\\s*\\b(?:if|case|until|unless|while|begin|class|module|def\\b[\\p{Ll}\\p{Lu}]*)|\\bdo)\\b",
+			"close": "\\b(end)\\b",
+			"style": "default",
+			"scope_exclude": ["text.html", "source", "comment", "string"],
+			"scope_exclude_exceptions": ["source.ruby.rails.embedded.html", "source.ruby.embedded.html"],
+			"plugin_library": "bh_modules.rubykeywords",
+			"language_filter": "whitelist",
+			"language_list": ["HTML", "HTML 5", "HBS", "PHP", "HTML (Rails)"],
+			"enabled": true
+		},
+		// PHP conditional keywords
+		{
+			"name": "php_keywords",
+			"open": "(?:^\\s*|<\\?(?:php)?\\s*)?\\b(if|foreach|for|while|switch)\\b(?=.*:\\s*(?:\\?>\\s*)?$)",
+			"close": "(?:^\\s*|<\\?(?:php)?\\s*)?\\b(endif|endfor|endforeach|endwhile|endswitch)\\b(?=\\s*;\\s*(?:\\?>\\s*)?$)",
+			"style": "default",
+			"language_filter": "whitelist",
+			"scope_exclude": ["string", "comment"],
+			"plugin_library": "bh_modules.phpkeywords",
+			"language_list": ["HTML", "HTML 5", "HBS", "XML", "PHP", "HTML+CFML", "ColdFusion", "ColdFusionCFC"],
+			"enabled": true
+		}
+	],
+
+	/* Plugin settings */
+
+	// Style to use for matched tags
+	"tag_style": "tag",
+
+	// Scopes to exclude from tag searches
+	"tag_scope_exclude": ["string", "comment"],
+
+	// Determine which style of tag-matching to use in which syntax
+	"tag_mode": {
+		"xhtml": ["XML"],
+		"html": ["HTML", "HTML 5", "HBS", "PHP", "HTML (Jinja Templates)", "HTML (Rails)", "HTML (Twig)"],
+		"cfml": ["HTML+CFML", "ColdFusion", "ColdFusionCFC"]
+	}
+}

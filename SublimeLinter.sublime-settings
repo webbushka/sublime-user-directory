@@ -1,0 +1,6 @@
+{
+	// An array of linter names to disable. Names should be lowercase.
+	"sublimelinter_disable": [
+		"css"
+	]
+}

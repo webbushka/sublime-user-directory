@@ -1,0 +1,31 @@
+[
+	{ "keys": ["super+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+
+	//Indent a line
+	{ "keys": ["super+ctrl+right"], "command": "indent" },
+	{ "keys": ["super+ctrl+left"], "command": "unindent" },
+
+	//Duplicate a line
+	{ "keys": ["super+alt+up"], "command": "duplicate_line" },
+	{ "keys": ["super+alt+down"], "command": "duplicate_line" },
+
+	//delete a line
+	{ "keys": ["super+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+
+	{ "keys": ["ctrl+d"], "command": "find_under_expand" },
+
+	//open files and go to line or funciton
+	{ "keys": ["super+shift+o"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+	{ "keys": ["super+ctrl+o"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+	{ "keys": ["ctrl+shift+o"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+
+	// browser style tab switching
+	{ "keys": ["ctrl+tab"], "command": "next_view" },
+	{ "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+
+	// Reset Font
+	{ "keys": ["super+0"], "command": "reset_font_size" },
+
+	// toggle file tree
+	{ "keys": ["super+\\"], "command": "toggle_side_bar" }
+]

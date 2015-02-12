@@ -1,0 +1,11 @@
+{
+	// exposed jsbeautifier options
+	"max_preserve_newlines": 2,
+	"indent_with_tabs": true,
+	"space_before_line_starters": true,
+	"jslint_happy": true,
+	"brace_style": "end-expand",
+
+	// jsformat options
+	// "format_on_save": true
+}

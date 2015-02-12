@@ -1,0 +1,37 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Better CoffeeScript",
+		"Color Highlighter",
+		"CSS3",
+		"EditorConfig",
+		"EJS",
+		"Ember.js Snippets",
+		"EmberScript",
+		"Emmet",
+		"Expand Tabs on Save",
+		"Floobits",
+		"Handlebars",
+		"HTML Mustache",
+		"Indent XML",
+		"Jade",
+		"JavaScript & NodeJS Snippets",
+		"JavaScript Completions",
+		"JavaScriptNext - ES6 Syntax",
+		"jQuery",
+		"JsFormat",
+		"LESS",
+		"Package Control",
+		"SCSS",
+		"Seti_UI",
+		"SideBarEnhancements",
+		"Theme - Afterglow",
+		"Theme - Centurion",
+		"Theme - Soda",
+		"Tomorrow Color Schemes",
+		"Wombat Theme"
+	]
+}

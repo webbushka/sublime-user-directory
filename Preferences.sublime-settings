@@ -1,0 +1,23 @@
+{
+	"auto_complete_commit_on_tab": true,
+	"auto_indent": true,
+	"caret_style": "smooth",
+	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night-Bright.tmTheme",
+	"convert_tabspaces_on_save": true,
+	"detect_indentation": true,
+	"find_selected_text": true,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_style": "tabs",
+	"line_padding_bottom": 2,
+	"line_padding_top": 1,
+	"tab_size": 3,
+	"theme": "Seti.sublime-theme",
+	"translate_tabs_to_spaces": false,
+	"useTabStops": true,
+	"wide_caret": true,
+	"word_wrap": false
+}
