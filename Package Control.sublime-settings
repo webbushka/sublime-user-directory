@@ -4,6 +4,7 @@
 	],
 	"installed_packages":
 	[
+		"AngularJS",
 		"Better CoffeeScript",
 		"Color Highlighter",
 		"CSS3",
