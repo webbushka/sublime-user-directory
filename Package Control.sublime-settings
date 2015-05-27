@@ -5,6 +5,8 @@
 	"installed_packages":
 	[
 		"AngularJS",
+		"Babel",
+		"Base16 Color Schemes",
 		"Better CoffeeScript",
 		"Color Highlighter",
 		"CSS3",
@@ -26,9 +28,14 @@
 		"JsFormat",
 		"LESS",
 		"Package Control",
+		"ReactJS",
+		"Ruby Slim",
+		"Sass",
 		"SCSS",
 		"Seti_UI",
 		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-jshint",
 		"Theme - Afterglow",
 		"Theme - Centurion",
 		"Theme - Soda",

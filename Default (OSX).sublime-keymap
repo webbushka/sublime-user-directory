@@ -27,5 +27,8 @@
 	{ "keys": ["super+0"], "command": "reset_font_size" },
 
 	// toggle file tree
-	{ "keys": ["super+\\"], "command": "toggle_side_bar" }
+	{ "keys": ["super+\\"], "command": "toggle_side_bar" },
+
+	// Enable Emmett in JSX
+	{"keys": ["shift+tab"], "command": "expand_abbreviation_by_tab", "context": [{"operand": "source.js", "operator": "equal", "match_all": true, "key": "selector"} ]}
 ]
